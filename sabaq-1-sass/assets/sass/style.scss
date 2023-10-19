@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: #020A18;
+}
+nav{
+    background-color: rgb(5, 16, 38);
+}
+.bar{
+    background-color: #020A18;
+}
+.box{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    #submit{display: none;}
+    .logo{
+        width: 15%;
+        img{
+            width: 100%;
+        }
+    }
+    ul{
+        display: flex;
+        li{
+            padding: 5px 10px;
+            a{
+                color: white;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+    .login button{
+ background:  #3A68B8;
+ border: none;
+ color: white;
+ padding: 5px 10px;
+ border-radius: 4px;
+ &:hover{
+    opacity: 0.6;
+}
+ }
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+@media (max-width:999px){flex-wrap: wrap;}
+    .text{
+        width: 50%;
+        color: white;
+        margin: 0 auto;
+@media (max-width:999px){width: 90%;}
+        a{
+            color: #3A68B8;
+        }
+        h1{
+            font-size: 55px;
+            margin: 10px 0;
+@media (max-width:999px){font-size: 24px;}
+        }
+        p{
+            font-size: 18px;
+            margin: 15px 0;
+            color: white;
+            opacity: 0.6;
+@media (max-width:999px){font-size: 12px;}
+        }
+        .two-btn button{
+            background:  #3A68B8;
+            font-size: 18px;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            margin-right: 10px;
+            border-radius: 4px;
+@media (max-width:999px){font-size: 12px;}
+
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+    .photo{
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 15px;
+@media (max-width:999px){width: 90%;}
+        img{
+            width: 100%;
+        }
+    }
+}
+.last-bar{
+    width: 80%;
+    margin: 0 auto;
+    img{
+        width: 100%;
+        margin: 30px 0;
+    }
+}
+.step-2{
+background-color:  #020A18;
+padding: 30px;
+}
+.step-2 .header .text h1{
+    font-size: 38px;
+@media (max-width:999px){font-size: 22px;}
+
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .items{
+        padding: 25px;
+        background-color: rgb(5, 16, 38);
+        width: 19%;
+        color: white;
+        text-align: center;
+@media (max-width:999px){width: 40%;}
+
+        .card-text h5 {
+            font-size: 15px;
+            margin: 10px 0;
+@media (max-width:999px){font-size: 10px;}
+
+        }
+        .card-text p{
+            font-size: 12px;
+            margin: 10px 0;
+@media (max-width:999px){font-size: 7px;}
+        }
+    }
+}
+footer{
+    background-color: rgb(5, 16, 38);
+    padding: 20px;
+    a{
+       color: #3A68B8;
+    }
+    p{
+        color: white;
+        opacity: 0.6;
+    }
+    .f-box{
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: 0 auto;
+        @media (max-width:999px){flex-wrap: wrap;}
+        .foot{
+            width: 19%;
+@media (max-width:999px){ width: 60%;
+    margin: 0 auto;
+}
+           p{
+            font-size: 12px;
+           }
+           ul li {
+            padding: 5px 0;
+           }
+           ul li h3{
+            margin-bottom: 10px;
+            color: white;
+           }
+           ul li a{
+            margin: 5px 0;
+            color: white;
+            opacity: 0.6;
+            font-size: 13px;
+            &:hover{
+                opacity: 1;
+            }
+           }
+        }
+    }
+}
+@media (max-width:999px){
+    .container{
+        max-width: 550px;
+        margin: 0 auto;
+        nav .bar .box {
+            .logo{
+                width: 150px;
+            }
+            
+            .login{
+                display: none;
+            }
+            #submit{
+                display: block;
+                padding: 5px 10px;
+                border: none;
+                background-color: #3A68B8;
+                color: white;
+                border-radius: 5px;
+            }
+        } 
+    }
+    #ws{
+padding: 15px;
+display: none;
+width: 60%;
+height: 150px;
+position: fixed;
+top: 0;
+left: 0;
+background-color: #020A18;
+color: white;
+opacity: 0.9;
+animation-name: baha;
+animation-duration: 2s;
+    ul{
+        display: inline;
+        }
+    }
+   #fff{
+    display: none;
+   }
+   @keyframes baha {
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+   }  
+}
+
+
+
+
+
